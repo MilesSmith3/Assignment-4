@@ -8,6 +8,4 @@ objects is smaller. To do this, the class needs comparison methods like
 less than and greater than. 
 
 4. It is something more fundamental. Python's built-in sort is a better
-algorithm (O(n log n)), and ours are O(n^2). On big lists that is a huge
-difference. Being written in C helps a little, but the better algorithm is
-the main reason.
+algorithm (O(n log n)), and ours are O(n^2). which makes a big difference on big list. 
