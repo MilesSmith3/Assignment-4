@@ -1,1 +1,14 @@
-
+1. Bubble sort processes slower because it executes more swaps and does over and over again. Selection sort only swaps a couple of times and insertion sort goes from one item to the next.
+ 
+2. Big-O notation only shows how the time grows as the list gets bigger. It ignores
+small details, like how many swaps each sort does. 
+ 
+3. The class needs to be comparable, which means Python can tell which of two
+objects is smaller. To do this, the class needs comparison methods like
+__lt__ (less than) and __gt__ (greater than). The sorts use these to compare
+items.
+ 
+4. It is something more fundamental. Python's built-in sort is a better
+algorithm (O(n log n)), and ours are O(n^2). On big lists that is a huge
+difference. Being written in C helps a little, but the better algorithm is
+the main reason.
